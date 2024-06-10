@@ -1,0 +1,27 @@
+.musicCardContainer{
+   padding: var(--spacing);
+   color: var(--font-terciary-color);
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   /*border: 1px solid var(--font-secondary-color);*/
+   height: 400px;
+}
+
+.textContainer{
+   width: 30%;
+   padding: var(--spacing);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: start;
+   /*border: 1px solid var(--font-primary-color);*/
+}
+
+.imageContainer img{
+   max-height: 100%;
+   height: 100%;
+   width: 100%;
+   max-width: 100%;
+   /*border: 1px solid var(--font-secondary-color);*/
+}

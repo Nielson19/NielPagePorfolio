@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+/*Variables*/
+:root{
+
+  --font-size-nav: calc(20px + 2vmin);
+  --font-size-nav-secondary: calc(1px + 2vmin * 2);
+  --font-size-text: calc(1px + 2vmin);
+  --font-size-text-secondary: calc(1px + 2vmin * 2);
+  --font-primary-color: white;
+  --font-secondary-color: #bcbcbc;
+  --font-terciary-color: #000000;
+  --primary-color: #000000;
+  --secondary-color: #000000;
+  --spacing:2%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*elements*/
+
+.bodyContainer{
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid var(--font-primary-color);*/
+  font-size: var(--font-size-nav);
+  color: var(--font-primary-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-body{
+  /*display: flex;*/
+  /*flex-direction: column;*/
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  padding-right:  20px;
+  max-width: 100%;
+  background-color: var(--secondary-color);
+  font-size: var(--font-size-nav);
+  /*border: 1px solid var(--font-primary-color);*/
+  animation: fadeInDown 2s ease-in-out;
+}
+
+
+.App{
+  margin: 0;
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/*size adaptation*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1100px){
+
+
+  .nav-button{
+    justify-content: center;
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+}
+
+
+/*Animations*/
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
