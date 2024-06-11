@@ -1,4 +1,5 @@
 .musicCardContainer{
+   background-color: var(--container-primary-color);
    padding: var(--spacing);
    color: var(--font-terciary-color);
    display: flex;
@@ -9,19 +10,19 @@
 }
 
 .textContainer{
-   width: 30%;
+   width: 80%;
    padding: var(--spacing);
    display: flex;
    flex-direction: column;
    justify-content: center;
    text-align: start;
+   color: var(--font-primary-color);
    /*border: 1px solid var(--font-primary-color);*/
 }
 
 .imageContainer img{
-   max-height: 100%;
    height: 100%;
    width: 100%;
-   max-width: 100%;
    /*border: 1px solid var(--font-secondary-color);*/
 }
+

@@ -12,10 +12,9 @@
     /*border: 1px solid var(--font-primary-color);*/
 }
 .nav_button {
-    background-color: var(--primary-color);
+   background-color: transparent;
     border: none;
     font-size: var(--font-size-nav);
-    color: var(--font-secondary-color);
     font-family: "Roc Grotesk", sans-serif;
     font-weight: lighter;
     transition: font-weight 0.3s;
